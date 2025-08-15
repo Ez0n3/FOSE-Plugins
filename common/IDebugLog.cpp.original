@@ -1,7 +1,5 @@
 #include "common/IDebugLog.h"
 #include <share.h>
-#include "common/IFileStream.h" // Added for uniformity
-#include <shlobj.h> // Added for uniformity
 
 std::FILE			* IDebugLog::logFile = NULL;
 char				IDebugLog::sourceBuf[16] = { 0 };
@@ -49,20 +47,6 @@ void IDebugLog::Open(const char * path)
 		}
 		while(!logFile && (id < 5));
 	}
-}
-
-// Added for uniformity
-void IDebugLog::OpenRelative(int folderID, const char * relPath)
-{
-	char	path[MAX_PATH];
-
-	ASSERT(SUCCEEDED(SHGetFolderPath(NULL, folderID, NULL, SHGFP_TYPE_CURRENT, path))); // From OBSE
-
-	strcat_s(path, sizeof(path), relPath);
-
-	IFileStream::MakeAllDirs(path);
-
-	Open(path);
 }
 
 /**
