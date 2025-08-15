@@ -63,7 +63,7 @@ bool Cmd_PluginExampleFunctionsTest_Execute(COMMAND_ARGS)
 	return true;
 }
 
-#endif
+#endif // RUNTIME
 
 // Define the example test bool function, including a description of what it does
 // Note: Outside of the RUNTIME def, for the editor also
@@ -126,7 +126,7 @@ const bool IsCompatible(const FOSEInterface* fose)
 #ifdef NOGORE
 		_ERROR("Editor only uses standard edition, closing.");
 		return false;
-#endif
+#endif // NOGORE
 	}
 	// check for compatible version. if strict=true, runtime and supported versions must match. if strict=false, runtime version must be above the minimum
 	else if (!IVersionCheck::IsCompatibleVersion(fose->runtimeVersion, MINIMUM_RUNTIME_VERSION, SUPPORTED_RUNTIME_VERSION, SUPPORTED_RUNTIME_VERSION_STRICT)) { // not strict
@@ -145,7 +145,7 @@ const bool IsCompatible(const FOSEInterface* fose)
 			_ERROR("ERROR::IsCompatible: Incorrect runtime edition (got %08X need %08X (standard))", fose->isNogore, 0);
 			return false;
 		}
-#endif
+#endif // NOGORE
 		
 		// not compatible
 		return false;
