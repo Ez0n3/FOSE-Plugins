@@ -1,0 +1,41 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35327.3
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "common", "..\..\common\common.vcxproj", "{20C6411C-596F-4B85-BE4E-8BC91F59D8A6}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ez_fose_plugin_example", "ez_fose_plugin_example_lean.vcxproj", "{9444F058-9471-41C9-AD40-A4C5CEF76023}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug ng|x86 = Debug ng|x86
+		Debug|x86 = Debug|x86
+		Release ng|x86 = Release ng|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{20C6411C-596F-4B85-BE4E-8BC91F59D8A6}.Debug ng|x86.ActiveCfg = Debug ng|Win32
+		{20C6411C-596F-4B85-BE4E-8BC91F59D8A6}.Debug ng|x86.Build.0 = Debug ng|Win32
+		{20C6411C-596F-4B85-BE4E-8BC91F59D8A6}.Debug|x86.ActiveCfg = Debug|Win32
+		{20C6411C-596F-4B85-BE4E-8BC91F59D8A6}.Debug|x86.Build.0 = Debug|Win32
+		{20C6411C-596F-4B85-BE4E-8BC91F59D8A6}.Release ng|x86.ActiveCfg = Release ng|Win32
+		{20C6411C-596F-4B85-BE4E-8BC91F59D8A6}.Release ng|x86.Build.0 = Release ng|Win32
+		{20C6411C-596F-4B85-BE4E-8BC91F59D8A6}.Release|x86.ActiveCfg = Release|Win32
+		{20C6411C-596F-4B85-BE4E-8BC91F59D8A6}.Release|x86.Build.0 = Release|Win32
+		{9444F058-9471-41C9-AD40-A4C5CEF76023}.Debug ng|x86.ActiveCfg = Debug ng|Win32
+		{9444F058-9471-41C9-AD40-A4C5CEF76023}.Debug ng|x86.Build.0 = Debug ng|Win32
+		{9444F058-9471-41C9-AD40-A4C5CEF76023}.Debug|x86.ActiveCfg = Debug|Win32
+		{9444F058-9471-41C9-AD40-A4C5CEF76023}.Debug|x86.Build.0 = Debug|Win32
+		{9444F058-9471-41C9-AD40-A4C5CEF76023}.Release ng|x86.ActiveCfg = Release ng|Win32
+		{9444F058-9471-41C9-AD40-A4C5CEF76023}.Release ng|x86.Build.0 = Release ng|Win32
+		{9444F058-9471-41C9-AD40-A4C5CEF76023}.Release|x86.ActiveCfg = Release|Win32
+		{9444F058-9471-41C9-AD40-A4C5CEF76023}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A273AAFE-D74F-47C8-B9DA-616EC63C31A6}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,80 @@
+ScriptName EzFosePluginExampleQuestScript
+
+; EzFosePluginExampleQuest.Started == 0
+short bInit = 0 ; reset every time the game loads
+
+Begin GameMode
+
+    ; Check if the quest has started (and only run once)
+	; EzFosePluginExampleQuest.Started == 0
+    if bInit == 0
+		
+		PrintC "EzFosePluginExampleQuest : Begin GameMode"
+		; MessageBoxEx "Begin GameMode|OK|Cancel" ; NOT FOUND
+		
+		
+		if (PluginExampleFunctionsTest)
+			PrintC "PluginExampleFunctionsTest : Test()"
+			; MessageBoxEx "Begin GameMode|OK|Cancel" ; NOT FOUND
+		endif
+		
+		
+        ; Mark the quest as started to prevent re-execution
+        ; set EzFosePluginExampleQuest.Started to 1
+		set bInit to 1
+
+		PrintC "EzFosePluginExampleQuest : End GameMode"
+		; MessageBoxEx "End GameMode|OK|Cancel" ; NOT FOUND
+		
+    endif
+
+End
+
+
+====================================================
+====================================================
+
+PluginExampleFunctionsTest
+
+
+
+		Debug.Trace(self +" skse64aeTestClass.Test()")
+		Debug.Notification("skse64aePluginExampleQuest : skse64aeTestClass.Test()")
+		Debug.MessageBox("skse64aePluginExampleQuest : skse64aeTestClass.Test()")
+
+
+skse64aePluginExampleQuest : OnInit
+
+Event OnInit()
+	Debug.Trace(self +" OnInit()")
+	Debug.Notification("skse64aePluginExampleQuest : OnInit")
+	Debug.MessageBox("skse64aePluginExampleQuest : OnInit")
+	
+
+
+
+
+; Declare a short integer variable to act as a boolean flag
+short bHasCompletedQuest
+
+scn MyQuestScript
+
+; Declare a short integer variable to act as a boolean flag
+short bHasCompletedQuest
+
+; In a function or event, assign values to this variable
+Begin GameMode
+    ; Set the flag to true (quest not yet completed)
+    set bHasCompletedQuest to 0 
+End
+
+; Later, check the value in a conditional statement
+Begin OnActivate Player
+    if bHasCompletedQuest == 0 ; If the quest has not been completed
+        ; Perform actions related to the quest
+        MessageBox "You have not completed this quest yet!"
+        set bHasCompletedQuest to 1 ; Mark the quest as completed
+    else
+        MessageBox "You have already completed this quest!"
+    endif
+End

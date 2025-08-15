@@ -1,0 +1,4 @@
+LIBRARY "ez_fose_plugin_example"
+EXPORTS
+FOSEPlugin_Query
+FOSEPlugin_Load
