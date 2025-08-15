@@ -10,18 +10,20 @@
   
 Updated: **August 15, 2025**  
   
+This repo contains Plugins for Fallout 3 (GOTY) - FOSE, including a Plugin Example (**Status: Tested and Working**).  
+  
 **FOSE** is an SDK created by [Ian Patterson](https://github.com/ianpatt), which extends the functionality of **Fallout 3 (GOTY)** for mod authors.  
 The original SDK used for building the FOSE EXE can be found here: [FOSE](https://fose.silverlock.org/)   
 Using FOSE in your mod will then make FOSE a **Dependency** which you must must inform your users of and provide a link to.  
   
-This repo contains Plugins for Fallout 3 (GOTY) - FOSE, including a Plugin Example (**Status: Tested and Working**).  
-  
-This mirror of the SDK is currently set to support Fallout 3 (GOTY) runtime: **1.7.3.0 (0x01070030)** - FOSE build: **0.1.3.2**, other versions will need to be manually configured.  
+This mirror of the SDK is currently set to support Fallout 3 (GOTY) runtime version: **1.7.3.0** - FOSE version: **0.1.3.2**, other versions will need to be manually configured.  
 It has also been pre-configured to build **Plugins** and is not intended for building the full EXE (Core and Loader).  
   
 All necessary projects have been migrated to and built with **Visual Studio 2022 (v143)**, which can be downloaded here: [Visual Studio 2020](https://visualstudio.microsoft.com/downloads/)   
 
-
+  
+[Back to top](#fose-plugins)  
+  
 ## Construction:  
   
 To build plugins, open "FOSE-Plugins/fose_plugins" and then open the plugin folder you want to build. EG: **ez_fose_plugin_example**.  
@@ -50,7 +52,9 @@ Post compile options have been removed for all projects, but can be re-added in-
 > Because the Ez plugin example registers new functions, it requires an OpcodeBase variable that **must be** requested from the FOSE team **before releasing to the public**!  
 > The default OpcodeBase that this example plugins uses (**0x2000**) will conflict will all other plugins that use the same OpcodeBase!  
 > If you need functions that require the OpcodeBase variable, then request a new OpcodeBase range from the FOSE team.  
-
+  
+[Back to top](#fose-plugins)  
+  
 ## Integration:  
   
 Integrating the example plugin with Fallout 3 involves creating a new Plugin Script which interfaces with the plugin dll.  
@@ -81,7 +85,9 @@ Begin GameMode
 End  
 ```
  * Save the script.
-
+  
+[Back to top](#fose-plugins)  
+  
 ## Duplication:  
   
 Duplicating the plugin example to make your own plugin is quite easy if you follow these steps:  
@@ -112,7 +118,7 @@ System.Guid.NewGuid().ToString().ToUpper()
  * Replace "ProjectGuid" with the GUID you generated above, this must be unique to the project.  
  * Replace "ProjectName" and "RootNamespace" to your new plugins "short" name. EG:  
 ```
-    <ProjectGuid>{XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX}</ProjectGuid>  
+    <ProjectGuid>{11111111-2222-3333-4444-555555555555}</ProjectGuid>  
     <ProjectName>my_cool_new_plugin</ProjectName>  
     <RootNamespace>my_cool_new_plugin</RootNamespace>  
 ```
@@ -137,9 +143,12 @@ Select your new "my_cool_new_plugin.vcxproj" or "my_cool_new_plugin_lean.vcxproj
 Select a Configuration (Debug or Release) and then Build the solution to test it.  
 After completion, open the ./Builds/Configuration/ folder and there should be your new dll file. EG: **my_cool_new_plugin.dll**  
   
+[Back to top](#fose-plugins)  
+  
 ## Donation:  
   
 If you enjoy and/or find this content useful, consider [buying me a coffee!](https://www.paypal.com/donate/?hosted_button_id=757K44LRCMVRW) :coffee:  
   
+[Back to top](#fose-plugins)
 
 
