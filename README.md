@@ -8,18 +8,20 @@
   
 ## Description:  
   
-Updated: **August 15, 2025**  
+Updated: **August 18, 2025**  
   
 This repo contains Plugins for Fallout 3 (GOTY) - FOSE, including a Plugin Example (**Status: Tested and Working**).  
   
-**FOSE** is an SDK created by [Ian Patterson](https://github.com/ianpatt), which extends the functionality of **Fallout 3 (GOTY)** for mod authors.  
-The original SDK used for building the FOSE EXE can be found here: [FOSE](https://fose.silverlock.org/)   
-Using FOSE in your mod will then make FOSE a **Dependency** which you must must inform your users of and provide a link to.  
+ * **FOSE** is an SDK created by [Ian Patterson](https://github.com/ianpatt), which extends the functionality of **Fallout 3 (GOTY)** for mod authors.  
+ * The original SDK used for building the FOSE EXE can be found here: [FOSE](https://fose.silverlock.org/)   
+ * Using FOSE in your mod will then make FOSE a **Dependency** which you must must inform your users of and provide a link to ([FOSE](https://www.nexusmods.com/fallout3/mods/8606)).  
   
 This mirror of the SDK is currently set to support Fallout 3 (GOTY) runtime version: **1.7.3.0** - FOSE version: **0.1.3.2**, other versions will need to be manually configured.  
 It has also been pre-configured to build **Plugins** and is not intended for building the full EXE (Core and Loader).  
   
-All necessary projects have been migrated to and built with **Visual Studio 2022 (v143)**, which can be downloaded here: [Visual Studio 2020](https://visualstudio.microsoft.com/downloads/)   
+All necessary projects have been migrated to and built with **Visual Studio 2022 (v143)**, which can be downloaded here: [Visual Studio 2020](https://visualstudio.microsoft.com/downloads/)  
+  
+The highest version of VS officially supported before it was abandoned for CMake, is Visual Studio 2019 (v142). Building Plugins with v143 is **experimental**, but functioning.  
 
 
   
