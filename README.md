@@ -63,7 +63,7 @@ Post compile options have been removed for all projects, but can be re-added in-
 Integrating the example plugin with Fallout 3 involves creating a new Plugin Script which interfaces with the plugin dll.  
 To start, create a new CK Plugin.esp which can be loaded with Vortex, ModManager2, or whatever mod manager you use.  
 In the new Plugin.esp, create a **Quest** that will be used to execute a script (Note: **Uncheck** Run Once and **Check** Allow Repeated Stages for testing).  
-Then create a **Quest Script** and attach that to the Quest created above. In that Quest Script will be the calls to the new Plugin Script.  
+Then create a **Quest Script** and attach that to the Quest created above. In that Quest Script will be the calls to the new Plugin Script (dll).  
 This an not always necessary, but it is required for the Ez plugin example because it adds a new function to the game to print "Hello World!".  
   
 For example:  
@@ -104,7 +104,7 @@ System.Guid.NewGuid().ToString().ToUpper()
  * Save the new GUID for later use in your new plugin.  
  * Copy the ./fose_plugins/ez_fose_plugin_example/ folder.  
  * Paste it into ./fose_plugins/ and name it without spaces. EG: ./fose_plugins/my_cool_new_plugin/  
- * Open the existing example solution(s) (ez_fose_plugin_example.sln and/or ez_fose_plugin_example**_lean**.sln) in Visual Studio.  
+ * Open the existing example solution(s) (ez_fose_plugin_example.sln and/or ez_fose_plugin_example_lean.sln) in Visual Studio.  
  * Delete the existing ez_fose_plugin_example from the solutions(s) and then save.  
  * Rename the example project(s) and solution(s) to your new plugins name. EG:  
    * ez_fose_plugin_example.sln to **my_cool_new_plugin.sln**  
