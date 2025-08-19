@@ -1,5 +1,5 @@
 #pragma once
-#include <string> // Added for VS2020
+#include <string> // Added for VS2022
 
 void DumpClass(void * theClassPtr, UInt32 nIntsToDump = 512);
 const char * GetObjectClassName(void * obj);
