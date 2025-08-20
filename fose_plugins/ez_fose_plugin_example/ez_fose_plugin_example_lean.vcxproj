@@ -180,26 +180,29 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+	<ClCompile Include="..\..\fose\fose\GameAPI.cpp" />
     <ClCompile Include="..\..\fose\fose\GameBSExtraData.cpp" />
     <ClCompile Include="..\..\fose\fose\GameData.cpp" />
     <ClCompile Include="..\..\fose\fose\GameExtraData.cpp" />
     <ClCompile Include="..\..\fose\fose\GameForms.cpp" />
+    <ClCompile Include="..\..\fose\fose\GameInterface.cpp" />
     <ClCompile Include="..\..\fose\fose\GameObjects.cpp" />
     <ClCompile Include="..\..\fose\fose\GameOSDepend.cpp" />
     <ClCompile Include="..\..\fose\fose\GameRTTI.cpp" />
     <ClCompile Include="..\..\fose\fose\GameSettings.cpp" />
     <ClCompile Include="..\..\fose\fose\GameTiles.cpp" />
     <ClCompile Include="..\..\fose\fose\GameTypes.cpp" />
-    <ClCompile Include="..\..\fose\fose_common\SafeWrite.cpp" />
     <ClCompile Include="..\..\fose\fose\Utilities.cpp" />
-	<ClCompile Include="..\..\fose\fose\GameAPI.cpp" />
+    <ClCompile Include="..\..\fose\fose_common\SafeWrite.cpp" />
   </ItemGroup>
   <ItemGroup>
+	<ClInclude Include="..\..\fose\fose\GameAPI.h" />
     <ClInclude Include="..\..\fose\fose\GameBSExtraData.h" />
     <ClInclude Include="..\..\fose\fose\GameData.h" />
     <ClInclude Include="..\..\fose\fose\GameEffects.h" />
     <ClInclude Include="..\..\fose\fose\GameExtraData.h" />
     <ClInclude Include="..\..\fose\fose\GameForms.h" />
+    <ClInclude Include="..\..\fose\fose\GameInterface.h" />
     <ClInclude Include="..\..\fose\fose\GameMenus.h" />
     <ClInclude Include="..\..\fose\fose\GameObjects.h" />
     <ClInclude Include="..\..\fose\fose\GameOSDepend.h" />
@@ -207,9 +210,8 @@
     <ClInclude Include="..\..\fose\fose\GameSettings.h" />
     <ClInclude Include="..\..\fose\fose\GameTiles.h" />
     <ClInclude Include="..\..\fose\fose\GameTypes.h" />
-    <ClInclude Include="..\..\fose\fose_common\SafeWrite.h" />
     <ClInclude Include="..\..\fose\fose\Utilities.h" />
-	<ClInclude Include="..\..\fose\fose\GameAPI.h" />
+    <ClInclude Include="..\..\fose\fose_common\SafeWrite.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="exports.def" />
